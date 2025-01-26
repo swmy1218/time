@@ -1,0 +1,50 @@
+:root {
+    --hour-deg: 0deg;
+    --min-deg: 0deg;
+    --sec-deg: 0deg;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  #contents {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #clock {
+    position: relative;
+    width: 700px;
+    height: 700px;
+    background: url("clock.png") center / contain no-repeat;
+  }
+  .hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 90%;
+    transform: translate(-50%, -90%) rotate(0deg);
+    border-style: solid;
+    border-color: black;
+  }
+  #second-hand {
+    width: 1px;
+    height: 40%;
+    transform: translate(-50%, -90%) rotate(var(--sec-deg));
+    background: red;
+  }
+  #minute-hand {
+    width: 6px;
+    height: 40%;
+    transform: translate(-50%, -90%) rotate(var(--min-deg));
+    background: black;
+  }
+  #hour-hand {
+    width: 8px;
+    height: 30%;
+    transform: translate(-50%, -90%) rotate(var(--hour-deg));
+    background: black;
+  }
+  
