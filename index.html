@@ -2,16 +2,21 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>clock</title>
+  <title>Clock</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="contents">
-    <div id="clock">
-      <div id="second-hand" class="hand"></div>
-      <div id="minute-hand" class="hand"></div>
-      <div id="hour-hand" class="hand"></div>
+    <div id="clock-container">
+      <div id="clock">
+        <div id="second-hand" class="hand"></div>
+        <div id="minute-hand" class="hand"></div>
+        <div id="hour-hand" class="hand"></div>
+        <div id="digital-date">
+          <span id="date"></span>
+          <span id="day"></span>
+        </div>
+      </div>
     </div>
   </div>
   <script src="script.js"></script>
